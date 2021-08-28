@@ -15,7 +15,7 @@ let TextChanger = new TextConditions;
 const notificationAPI = require('./api/notification.router')
 const broswerAPI = require('./api/browser.router')
 
-let port = 3300
+let port = '/.netlify/functions'
 app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
