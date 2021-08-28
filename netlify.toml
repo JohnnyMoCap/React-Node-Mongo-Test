@@ -1,4 +1,0 @@
-[build]
-
-functions = "back_end"
-command = "CI= npm run build"
