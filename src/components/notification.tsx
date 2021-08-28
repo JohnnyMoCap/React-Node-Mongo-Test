@@ -34,7 +34,7 @@ const Notification = (Props:Props) => {
     
     //belongs to react-notifications-component and will render the notification.
     const NotificationAlert=()=>{
-        let d = new Date(Props.instance.browseUser.notiDuration)
+        let d = new Date(Props.instance.browseUser.notiDuration)//will decide how many seconds the notification will stay on the page
         //tells the store to render 1 notification.
         store.addNotification({
             content: notificationStracture,
@@ -45,7 +45,7 @@ const Notification = (Props:Props) => {
             animationOut:["animated","fadeoUT"],
             dismiss:{
                 duration:d.getTime(),
-                showIcon:true
+                showIcon: true,
             }
         })
     }
@@ -104,6 +104,9 @@ display: block;
 width: 200px;
 `
 const Type = styled.p`
+justify-content: center;
+align-items:center;
+display:flex;
 font-weight:bold;
 padding-right: 20px;
 padding-left:20px;
@@ -111,7 +114,7 @@ padding-left:20px;
 const Button = styled.p`
 justify-content: center;
 align-items:center;
-padding-top: 10px;
+display:flex;
 padding-right: 30px;
 padding-left: 30px;
 `

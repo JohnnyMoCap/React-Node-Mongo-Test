@@ -36,6 +36,7 @@ app.get("/", (req,res) => {
   //used to send notifications on an interval.
 io.on("connection", socket=>{
 
+  //when called it will send a notification to the client in a set interval unique to him
   socket.on('notificationsStart',(browserData)=>{
     
     if(browserData){

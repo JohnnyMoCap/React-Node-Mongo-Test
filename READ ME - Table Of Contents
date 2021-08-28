@@ -1,0 +1,40 @@
+
+
+Table of contents:
+
+thank you for considering me and I cant wait to hear back from you.
+
+containts the location of every feature asked for in the exercise:
+
+- Every new browse of the app should treat the user as a new user:-------------------------------------------------------------
+
+back_end/api/browser.router.js - 10
+src/logic/browser.http.ts - 8
+
+- For every new user the server should decide:---------------------------------------------------------------------------------
+1)Time period for showing a new notification (Random between 5-10 seconds)
+2)Time duration of showing the notification (Random between 1-4 seconds)
+
+back_end/api/browser.router.js - 11
+
+-The app should display random notifications for the user periodically, in the specified time and duration given by the server.
+
+back_end/server.js - 40
+src/components/notification.tsx - 33 / 36
+
+- Notifications can be clickable and when a user clicks on a notification:-----------------------------------------------------
+1) Should mark the specific notification, and not display this notification for the user again.
+2) The app should not display the next (one upcoming only) notification for the user
+
+src/components/notification.tsx - 54
+
+- Should store on DB clicked notifications for each user.----------------------------------------------------------------------
+
+back_end/api/browser.router.js - 50
+src/notification.tsx - 59
+
+- custom notifications:--------------------------------------------------------------------------------------------------------
+
+back_end/server.js - 66
+
+
