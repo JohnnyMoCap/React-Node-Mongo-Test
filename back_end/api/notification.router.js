@@ -68,7 +68,4 @@ router.get('/getNotiText',async (req,res)=>{
 })
 
 
-
-
-
 module.exports = router;
