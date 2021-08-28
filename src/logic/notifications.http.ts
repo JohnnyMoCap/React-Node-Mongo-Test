@@ -3,7 +3,7 @@ export class NotificationHTTP {
 
     
     async getNotification(id:string){
-        const url = 'http://.netlify/functions/notificationAPI/getNotificationInstance/'+id;
+        const url = 'http://localhost:3300/notificationAPI/getNotificationInstance/'+id;
         const res = await fetch(url, {
           method:"get",
         })
@@ -12,7 +12,7 @@ export class NotificationHTTP {
     }
 
     async getNoti_types(){ 
-      const url = 'http://.netlify/functions/notificationAPI/getNotiTypes/';
+      const url = 'http://localhost:3300/notificationAPI/getNotiTypes/';
         const res = await fetch(url, {
           method:"get",
         })
@@ -22,7 +22,7 @@ export class NotificationHTTP {
 
 
     async getNoti_texts(){
-      const url = 'http://.netlify/functions/notificationAPI/getNotiTypes/';
+      const url = 'http://localhost:3300/notificationAPI/getNotiTypes/';
         const res = await fetch(url, {
           method:"get",
         })
